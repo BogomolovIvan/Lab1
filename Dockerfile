@@ -1,7 +1,5 @@
-FROM alpine:3.4
+FROM python:3
 
-RUN apk update
-RUN apk add vim
-RUN apk add curl
+COPY . .
 
-RUN echo "Durak"
+CMD ["python", "./main.py"]
